@@ -16,7 +16,6 @@ final class TimelineViewController: UIViewController {
     init(viewModel: TimelineViewModelProtocol) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-        timelineView.backgroundColor = .white
     }
     
     required init?(coder: NSCoder) {

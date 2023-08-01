@@ -17,9 +17,10 @@ final class ContainerViewController: UITabBarController {
     
     func setupTabBarItem() {
         let timelineViewController = TimelineViewController(viewModel: TimelineViewModel())
+        let searchViewController = SearchViewController(viewModel: SearchViewModel())
         timelineViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "house"), selectedImage: UIImage(systemName: "house.fill"))
-        
-        self.setViewControllers([timelineViewController], animated: true)
+        searchViewController.tabBarItem = UITabBarItem(title: nil, image: UIImage(systemName: "magnifyingglass.circle"), selectedImage: UIImage(systemName: "magnifyingglass.circle.fill"))
+        self.setViewControllers([timelineViewController, searchViewController], animated: true)
     }
 }
 
