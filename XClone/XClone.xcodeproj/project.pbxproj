@@ -16,6 +16,8 @@
 		AEBB9B2F2A78A47F0037D233 /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB9B2E2A78A47F0037D233 /* ContainerViewModel.swift */; };
 		AEBB9B332A78A8E70037D233 /* Twit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB9B322A78A8E70037D233 /* Twit.swift */; };
 		AEBB9B382A78AD360037D233 /* Twit.json in Resources */ = {isa = PBXBuildFile; fileRef = AEBB9B372A78AD360037D233 /* Twit.json */; };
+		AEBB9B3B2A78AF520037D233 /* TimelineViewControlller.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB9B3A2A78AF520037D233 /* TimelineViewControlller.swift */; };
+		AEBB9B3D2A78AF650037D233 /* TimelineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB9B3C2A78AF650037D233 /* TimelineViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		AEBB9B2E2A78A47F0037D233 /* ContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewModel.swift; sourceTree = "<group>"; };
 		AEBB9B322A78A8E70037D233 /* Twit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twit.swift; sourceTree = "<group>"; };
 		AEBB9B372A78AD360037D233 /* Twit.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Twit.json; sourceTree = "<group>"; };
+		AEBB9B3A2A78AF520037D233 /* TimelineViewControlller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewControlller.swift; sourceTree = "<group>"; };
+		AEBB9B3C2A78AF650037D233 /* TimelineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 			children = (
 				AEBB9B2C2A78A35E0037D233 /* App */,
 				AEBB9B2D2A78A3660037D233 /* View */,
+				AEBB9B3E2A78B9810037D233 /* ViewModel */,
 				AEBB9B312A78A7F90037D233 /* Model  */,
 				AEBB9B342A78AB980037D233 /* Resource */,
 				AEBB9B1F2A789E810037D233 /* LaunchScreen.storyboard */,
@@ -94,18 +99,10 @@
 		AEBB9B2D2A78A3660037D233 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AEBB9B302A78A4870037D233 /* Container */,
+				AEBB9B182A789E800037D233 /* ContainerViewController.swift */,
+				AEBB9B3A2A78AF520037D233 /* TimelineViewControlller.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		AEBB9B302A78A4870037D233 /* Container */ = {
-			isa = PBXGroup;
-			children = (
-				AEBB9B182A789E800037D233 /* ContainerViewController.swift */,
-				AEBB9B2E2A78A47F0037D233 /* ContainerViewModel.swift */,
-			);
-			path = Container;
 			sourceTree = "<group>";
 		};
 		AEBB9B312A78A7F90037D233 /* Model  */ = {
@@ -123,6 +120,15 @@
 				AEBB9B1D2A789E810037D233 /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		AEBB9B3E2A78B9810037D233 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB9B2E2A78A47F0037D233 /* ContainerViewModel.swift */,
+				AEBB9B3C2A78AF650037D233 /* TimelineViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,7 +206,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEBB9B192A789E800037D233 /* ContainerViewController.swift in Sources */,
+				AEBB9B3D2A78AF650037D233 /* TimelineViewModel.swift in Sources */,
 				AEBB9B152A789E800037D233 /* AppDelegate.swift in Sources */,
+				AEBB9B3B2A78AF520037D233 /* TimelineViewControlller.swift in Sources */,
 				AEBB9B2F2A78A47F0037D233 /* ContainerViewModel.swift in Sources */,
 				AEBB9B332A78A8E70037D233 /* Twit.swift in Sources */,
 				AEBB9B172A789E800037D233 /* SceneDelegate.swift in Sources */,
