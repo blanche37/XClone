@@ -15,6 +15,7 @@
 		AEBB9B2B2A78A3220037D233 /* CombineCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = AEBB9B2A2A78A3220037D233 /* CombineCocoa */; };
 		AEBB9B2F2A78A47F0037D233 /* ContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB9B2E2A78A47F0037D233 /* ContainerViewModel.swift */; };
 		AEBB9B332A78A8E70037D233 /* Twit.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBB9B322A78A8E70037D233 /* Twit.swift */; };
+		AEBB9B382A78AD360037D233 /* Twit.json in Resources */ = {isa = PBXBuildFile; fileRef = AEBB9B372A78AD360037D233 /* Twit.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		AEBB9B292A78A3120037D233 /* CombineCocoa */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CombineCocoa; path = Carthage/Checkouts/CombineCocoa; sourceTree = "<group>"; };
 		AEBB9B2E2A78A47F0037D233 /* ContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewModel.swift; sourceTree = "<group>"; };
 		AEBB9B322A78A8E70037D233 /* Twit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twit.swift; sourceTree = "<group>"; };
+		AEBB9B372A78AD360037D233 /* Twit.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Twit.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +67,7 @@
 				AEBB9B2C2A78A35E0037D233 /* App */,
 				AEBB9B2D2A78A3660037D233 /* View */,
 				AEBB9B312A78A7F90037D233 /* Model  */,
-				AEBB9B1D2A789E810037D233 /* Assets.xcassets */,
+				AEBB9B342A78AB980037D233 /* Resource */,
 				AEBB9B1F2A789E810037D233 /* LaunchScreen.storyboard */,
 				AEBB9B222A789E810037D233 /* Info.plist */,
 			);
@@ -112,6 +114,15 @@
 				AEBB9B322A78A8E70037D233 /* Twit.swift */,
 			);
 			path = "Model ";
+			sourceTree = "<group>";
+		};
+		AEBB9B342A78AB980037D233 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				AEBB9B372A78AD360037D233 /* Twit.json */,
+				AEBB9B1D2A789E810037D233 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +186,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEBB9B382A78AD360037D233 /* Twit.json in Resources */,
 				AEBB9B212A789E810037D233 /* LaunchScreen.storyboard in Resources */,
 				AEBB9B1E2A789E810037D233 /* Assets.xcassets in Resources */,
 			);
