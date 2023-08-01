@@ -8,7 +8,6 @@
 import UIKit
 
 final class TimelineView: UIView {
-    private let scrollView = UIScrollView()
     private let tableView = UITableView()
     
     init() {
@@ -21,16 +20,16 @@ final class TimelineView: UIView {
     }
     
     private func setupViews() {
-        self.addSubview(scrollView)
-        scrollView.addSubview(tableView)
+        tableView.backgroundColor = .black
         
-        scrollView.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(tableView)
+        
         tableView.translatesAutoresizingMaskIntoConstraints = false
         
-        let viewDictionary: [String: Any] = ["scroll": scrollView, "table": tableView]
+        let viewDictionary: [String: Any] = ["table": tableView]
         
-        var hConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[scroll]|", metrics: nil, views: viewDictionary)
-        var vConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[scroll]|", metrics: nil, views: viewDictionary)
+        let hConstraints = NSLayoutConstraint.constraints(withVisualFormat: "H:|[table]|", metrics: nil, views: viewDictionary)
+        let vConstraints = NSLayoutConstraint.constraints(withVisualFormat: "V:|[table]|", metrics: nil, views: viewDictionary)
         
         [hConstraints, vConstraints].forEach {
             addConstraints($0)
