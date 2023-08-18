@@ -7,8 +7,9 @@
 
 import Foundation
 
-struct Twit: Codable {
+struct Twit: Decodable, Hashable {
     var nickName: String
+    var verified: Bool
     var mentionId: String
     var profileImage: String?
     var content: String
@@ -16,6 +17,7 @@ struct Twit: Codable {
     
     private enum CodingKeys: String, CodingKey {
         case nickName = "nick_name"
+        case verified
         case mentionId = "mention_id"
         case profileImage = "profile_image"
         case content
